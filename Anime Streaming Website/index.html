@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Web Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo" id="navbar">
+        <i class="fa-brands fa-wolf-pack-battalion"></i>RedWolf Anime
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="templates/html/anime.html">Anime</a>
+        <a href="templates/html/Movies.html">Movies</a>
+        <a href="templates/html/for-kids">For Kids</a>
+        <a href="templates/html/family">Family</a>
+      </nav>
+
+
+
+
+      <div class="icons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Search...">
+        </div>
+
+
+
+
+        <button id="fev-button">
+          <i class="fas fa-heart" id="heart" ></i>
+        </button>
+        <button id="login-btn">
+          <i class="fa-solid fa-right-to-bracket" id="login"></i>
+        </button>
+      </div>
+    
+    </header>
+
+
+
+
+    
+<!-- ----------------- SLIDER SECTION -------------- -->
+
+    <div class="slider">
+      
+      <img class="slides" src="img/Background/jjk_wallpaper.jpg" alt="jujutsu kaisen" />
+      <img class="slides" src="img/Background/kaiju no 8.jpeg" alt="kaiju no 8" />
+      <img class="slides" src="img/Background/sololeveling.jpg" alt="solo leveling" />
+      <img class="slides" src="img/Background/demon slayer.png" alt="demon slayer" />
+      <img class="slides" src="img/Background/tokyo _revenger.jpg" alt="tokyo revenger" />
+      <img class="slides" src="img/Background/berserk.jpg" alt="berserk" />
+      <img class="slides" src="img/Background/AOT_poster landscape.png" alt="attack on titan" />
+      
+
+      <a class="previous" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+
+
+
+
+
+<!-- ----------------- POPULAR TODAY SECTION -------------- -->
+
+    <section class="popular-today">
+    
+      <h2>Popular Today</h2>
+      <div class="anime-grid">
+        <div class="anime-card">
+          <img src="img/Background/onepiece.jpg" alt="Anime 4">
+          <h3>One Piece</h3>
+        </div>
+        <div class="anime-card">
+          <img src="https://is.zobj.net/image-server/v1/images?r=tE5Zn1jFm1J8OjspoGCjk4aNrvG7fjN0jLSTTonpEMt4wP5tHG4aHJA4q8WPqJYuJVbRoF8FcHChd5LuAzy9_WBnQZzHIsNtwestz2UG_oiRHsnqbyvo-qo2HXOg5VyXna2eG-82LDx8vDa5aS36Gk_jSKP8TenXJNBKYXFNqnZC0C_gMlz-18tsnE51RWnv2gxdd2BMTyFNb9Tg_uuo0H5Hl6_KM3a63ZrgLg" alt="Anime 1">
+          <h3>Solo Leveling</h3>
+        </div>
+        
+        <div class="anime-card">
+          <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/02/Devil-May-Cry-Netflix-Adi-Shankar-Anime.jpg" alt="Anime 2">
+          <h3>Devil May Cry</h3>
+        </div>
+        <div class="anime-card">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/eCWtp80MCEBPMuRmAjm2zNMgOSW.jpg" alt="Anime 3">
+          <h3>Yandere Dark Elf...</h3>
+        </div>
+        <div class="anime-card">
+          <img src="https://www.animationmagazine.net/wordpress/wp-content/uploads/My-Hero-Academia-Vigilantes-KV-2.jpg" alt="Anime 3">
+          <h3>My Hero Academia...
+        </div>
+        <div class="anime-card">
+          <img src="https://i.pinimg.com/736x/c6/e1/59/c6e159a15bf400575fa9846f3ff0a370.jpg" alt="Anime 2">
+          <h3>Sword of the Demon Hunter...
+          </h3>
+        </div>
+        
+        <!-- Add more anime cards as you like -->
+      </div>
+      <div class="view-all-container">
+        <a href="templates/html/anime.html" class="view-all-btn">View All</a>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!------------------- OUR RECOMMENDATION SECTION ---------------->
+
+    <section class="recommendation">
+      <h2>Our Recommendation</h2>
+      <div class="anime-grid">
+        <div class="anime-card">
+          <img src="img/Background/onepiece.jpg" alt="Anime 4">
+          <h3>One Piece</h3>
+        </div>
+        <div class="anime-card">
+          <img src="img/Background/aot_poster.jpg" alt="Anime 1">
+          <h3>Attack on Titan</h3>
+        </div>
+        
+        <div class="anime-card">
+          <img src="img/Background/bleach.jpg" alt="Anime 2">
+          <h3>Bleach</h3>
+        </div>
+        <div class="anime-card">
+          <img src="img\Background\naruto.jpg" alt="Anime 3">
+          <h3>Naruto</h3>
+        </div>
+        <div class="anime-card">
+          <img src="img\Background\ds_poster.jpg" alt="Anime 3">
+          <h3>Demon Slayer</h3>
+        </div>
+        <div class="anime-card">
+          <img src="img/Background/jjk.jpg" alt="Anime 2">
+          <h3>Jujutsu Kaisen</h3>
+        </div>
+        
+        <!-- Add more anime cards as you like -->
+      </div>
+      <div class="view-all-container">
+        <a href="templates/html/anime.html" class="view-all-btn">View All</a>
+      </div>
+    </section>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------- Footer ---------------->
+
+
+      <section class="footer">
+        <h3><i class="fa-brands fa-wolf-pack-battalion"></i>RedWolf Anime
+        </h3>
+        <a href="#"> contact us </a>
+        <a href="#"> Terms of use </a>
+        <a href="#"> about </a>
+        <a href="#"> Privacy Policy </a>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
