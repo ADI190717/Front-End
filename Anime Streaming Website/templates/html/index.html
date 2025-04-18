@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedWolf Anime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header/Navbar -->
+    <header>
+      <a href="index.html" class="logo">
+        <i class="fa-brands fa-wolf-pack-battalion"></i>RedWolf Anime
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="templates/html/anime.html">Anime</a>
+        <a href="templates/html/Movies.html">Movies</a>
+        <a href="templates/html/for-kids.html">For Kids</a>
+        <a href="templates/html/family.html">Family</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-heart" id="heart"></i>
+        <i class="fa-solid fa-right-to-bracket" id="login"></i>
+      </div>
+    </header>
+
+    <!-- Slider Section -->
+    <div class="slider">
+      <img class="slides" src="img/Background/jjk_wallpaper.jpg" alt="Jujutsu Kaisen" />
+      <img class="slides" src="img/Background/kaiju no 8.jpeg" alt="Kaiju No 8" />
+      <img class="slides" src="img/Background/sololeveling.jpg" alt="Solo Leveling" />
+      <img class="slides" src="img/Background/demon slayer.png" alt="Demon Slayer" />
+      <img class="slides" src="img/Background/tokyo_revenger.jpg" alt="Tokyo Revenger" />
+      <img class="slides" src="img/Background/berserk.jpg" alt="Berserk" />
+      <img class="slides" src="img/Background/AOT_poster_landscape.png" alt="Attack on Titan" />
+
+      <a class="previous" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!-- Popular Today Section -->
+    <section class="popular-today">
+      <h2>Popular Today</h2>
+      <div class="anime-grid">
+        <div class="anime-card">
+          <img src="img/Background/onepiece.jpg" alt="One Piece" />
+          <h3>One Piece</h3>
+        </div>
+
+        <div class="anime-card">
+          <img src="https://is.zobj.net/image-server/v1/images?r=tE5Zn1jFm1J8OjspoGCjk4aNrvG7fjN0jLSTTonpEMt4wP5tHG4aHJA4q8WPqJYuJVbRoF8FcHChd5LuAzy9_WBnQZzHIsNtwestz2UG_oiRHsnqbyvo-qo2HXOg5VyXna2eG-82LDx8vDa5aS36Gk_jSKP8TenXJNBKYXFNqnZC0C_gMlz-18tsnE51RWnv2gxdd2BMTyFNb9Tg_uuo0H5Hl6_KM3a63ZrgLg" alt="Solo Leveling" />
+          <h3>Solo Leveling</h3>
+        </div>
+
+        <div class="anime-card">
+          <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/02/Devil-May-Cry-Netflix-Adi-Shankar-Anime.jpg" alt="Devil May Cry" />
+          <h3>Devil May Cry</h3>
+        </div>
+
+        <div class="anime-card">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/eCWtp80MCEBPMuRmAjm2zNMgOSW.jpg" alt="Yandere Dark Elf" />
+          <h3>Yandere Dark Elf</h3>
+        </div>
+
+        <div class="anime-card">
+          <img src="https://www.animationmagazine.net/wordpress/wp-content/uploads/My-Hero-Academia-Vigilantes-KV-2.jpg" alt="My Hero Academia" />
+          <h3>My Hero Academia</h3>
+        </div>
+
+        <div class="anime-card">
+          <img src="https://i.pinimg.com/736x/c6/e1/59/c6e159a15bf400575fa9846f3ff0a370.jpg" alt="Sword of the Demon Hunter" />
+          <h3>Sword of the Demon Hunter</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Recommendation Section -->
+    <section class="recommendation">
+      <h2>Our Recommendation</h2>
+      <div class="anime-grid">
+        <div class="anime-card">
+          <img src="img/Background/onepiece.jpg" alt="One Piece" />
+          <h3>One Piece</h3>
+        </div>
+
+        <!-- Add more recommendations here -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
