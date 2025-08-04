@@ -157,6 +157,17 @@ body{
 }
 
 /*========================== Hire Me Btn End =============================*/
+
+
+
+
+
+
+
+
+
+
+
 .home-sci a{
     position: relative;
     display: flex;
@@ -372,4 +383,5 @@ body{
         opacity: 1;
         transform: rotate(360deg);   
     }
+
 }
