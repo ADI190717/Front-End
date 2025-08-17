@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --red:#E50914;
+    --black:#000000;
+    --light-color:#181818;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    box-sizing:border-box;
+}
+
+body{
+    background: var(--light-color);
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.5); /* Slight transparent */
+    backdrop-filter: blur(30px);    /* Adds blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
+
+header .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+header .logo:hover{
+    color: var(--red);
+    /* font-weight: bolder; */
+    font-size: xx-large;
+}
+
+header .logo i{
+    color: var(--red);
+    padding-right: 10;
+    font-size: xx-large;
+}
+
+header .navbar a{
+    font-size: 1rem;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    color: #fff;
+}
+
+header .navbar a.active
+{
+    color: #fff;
+    background: var(--red);
+}
+header .navbar a:hover{
+    font-size: large;
+    color: #fff;
+    background: var(--red);
+}
+
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header .icons i{
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: 50%;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+header .icons{
+    padding: 15px;
+    justify-content: space-between;
+}
+
+
+header .icons i:hover,
+header .icons a:hover,
+#search-btn:hover{
+    color: #fff;
+    background: var(--red);
+    transform: rotate(30deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SEARCH-BUTTON */
+
+.icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#search-btn{
+        border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--light-color);
+    font-size: 18px;
+}
+#search-btn i{
+    pointer-events: none;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: 50%;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+#search-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+#search-btn i:hover{
+    transform: rotate(30deg);
+}
+
+
+
+
+
+/* SEARCH-BAR */
+.search-bar {
+    position: absolute;
+    right: 290px;   /* moves search bar on topof the button */
+    top:81px;      /* moves search bar on topof the button */
+    width: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    border: 2px solid red;
+    transition: width 0.5s ease;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+}
+  
+.search-bar input {
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 22px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-style: italic;
+    background: transparent;
+    backdrop-filter: blur(30px);
+}
+  
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+to {
+    opacity: 1;
+    transform: translateY(10px);
+}
+}
+  
+
+
+
+
+
+
+
+
+
+#fev-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+#login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+
+
+
+
+/* slider */
+.slider {
+    margin: auto;
+    margin-top: 18px;
+    position: relative;
+    width: 1224px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.slides {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.slides:first-child {
+    opacity: 1;
+}
+
+
+@keyframes slideAnimation {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    95% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slides:nth-child(1) { animation: slideAnimation 20s infinite; }
+.slides:nth-child(2) { animation: slideAnimation 20s infinite 4s; }
+.slides:nth-child(3) { animation: slideAnimation 20s infinite 8s; }
+.slides:nth-child(4) { animation: slideAnimation 20s infinite 12s; }
+.slides:nth-child(5) { animation: slideAnimation 20s infinite 16s; }
+
+
+
+
+
+/* previous and next buttons on slidebar */
+.previous, .next {
+    color:#fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.584);
+    /* justify-content: center; */
+    
+}
+.previous:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.previous{
+    border-radius: 0 10px 10px 0;
+}
+.next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+
+/* Popular Today Section */
+
+.popular-today {
+padding: 60px 20px;
+background: var(--light-color);
+text-align: center;
+}
+
+.popular-today h2 {
+font-size: 2.5rem;
+margin-bottom: 40px;
+color: #fff;
+}
+
+.anime-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+gap: 10px;
+max-width: 100%;
+margin: 0 auto;
+}
+
+.anime-card {
+background: var(--red);
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.anime-card img {
+width: 100%;
+height: 450px;
+object-fit: cover;
+}
+
+.anime-card h3 {
+font-size: 1.2rem;
+margin: 15px 0;
+color: #fff;
+}
+
+.anime-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+  
+
+
+/* <-------------Recommendation Section---------> */
+.recommendation {
+    padding:  20px;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.recommendation h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+
+
+
+/* view all */
+.view-all-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-all-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, rgb(133, 11, 11), #eb8787);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.view-all-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.view-all-btn:hover::after {
+  left: 100%;
+}
+
+.view-all-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+        
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width: 768px){
+   
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+    }
+}
+
+@media(max-width: 468){
+    html{
+        font-size: 50%;
+    }
+}
